@@ -72,7 +72,7 @@ const NavigationTabs = ({ activeTab, setActiveTab }) => {
               key={tab.id}  
               to={tab.path}
               onClick={() => handleTabClick(tab.id)}
-              className={`flex-1 text-center py-3 px-2 text-sm font-medium transition-all duration-300
+              className={`flex-1 text-center py-2 px-2 text-sm font-medium transition-all duration-300
                 flex flex-col items-center justify-center
                 ${
                   isActive
