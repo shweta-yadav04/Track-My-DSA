@@ -17,7 +17,7 @@ const Header =({}) =>
                     </div>
            
                     <div>
-                        <h1 style={{fontSize: '2.0rem', fontWeight: 'bold', background: 'linear-gradient(to right, #2563EB, #9333EA)', WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent'}}> DSA Tracker</h1>
+                        <h1 style={{fontSize: '2.0rem', fontWeight: 'bold', background: 'linear-gradient(to right, #2563EB, #9333EA)', WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent'}}> TrackMyDSA</h1>
                         <p className="text-sm text-[#4B5563] font-bold," > Master Data Structures and Algorithm</p>
                     </div>
                     
