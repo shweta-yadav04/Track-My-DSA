@@ -4,7 +4,7 @@ import { Target } from 'lucide-react';
 const Header =({}) =>
 {  return(
     <div className="bg-[#FFFFFF] overflow-hidden opacity-90 backdrop:blur-sm border-b border-[#6B7280] sticky top-0 z-400">
-       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+       <div className="max-w-7xl mx-auto px-4 py-0.4 sm:px-6 lg:px-8">
             <div style={{
         display: 'flex',
         justifyContent: 'space-between',

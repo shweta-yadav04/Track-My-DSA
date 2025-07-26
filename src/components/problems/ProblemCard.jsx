@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, Clock } from "lucide-react";
+import { ExternalLink, Clock,AlertTriangle,CheckCircle } from "lucide-react";
 
 const ProblemCard = ({ problem, handleStatusChange, getStatusIcon, getDifficultyColor }) => {
   return( 
@@ -54,11 +54,11 @@ const ProblemCard = ({ problem, handleStatusChange, getStatusIcon, getDifficulty
                   {problem.status === "Attempted" && (
                     <div className="flex items-center space-x-2">
                       <span className="text-sm text-[#FCD34D] bg-[#713F12] opacity-80 px-3 py-1 rounded border border-[#EAB308]">
-                        ⚠ Attempted
+                    <span className="flex flex-row"><AlertTriangle className="w-3 h-3 mr-1" /> Attempted</span>
                       </span>
                       <button
                         onClick={() => handleStatusChange(problem.id, "Solved")}
-                        className="px-4 py-2 bg-[#16A34A] ml-2 text-white rounded-lg hover:bg-[#15803D] transition-colors text-sm font-medium cursor-pointer"
+                        className="px-4 py-2 bg-[#16A34A] ml-2 text-[#FFFF] rounded-lg hover:bg-[#15803D] transition-colors text-sm font-medium cursor-pointer"
                       >
                         Mark Solved
                       </button>
@@ -74,7 +74,7 @@ const ProblemCard = ({ problem, handleStatusChange, getStatusIcon, getDifficulty
                   {problem.status === "Solved" && (
                     <div className="flex items-center space-x-2">
                       <span className="text-sm text-[#86EFAC] bg-[#14532D] opacity-80 px-3 py-1 rounded border border-[#22C55E]">
-                        ✓ Solved
+                      <span className="flex flex-row"><CheckCircle className="w-3 h-3 mr-1" />  Solved</span>
                       </span>
                       <button
                         onClick={() => handleStatusChange(problem.id, "Unsolved")}

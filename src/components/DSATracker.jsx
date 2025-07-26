@@ -7,6 +7,7 @@ import { problemsData } from "../data/problemsData";
 import { Circle, CheckCircle } from "lucide-react";
 import ProblemLists from "./problems/ProblemLists";
 import MindMapTab from "../map/MindMapTab";
+import StatsTab from "./Stats/StatsTab";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 const DSATracker = () => {
@@ -119,7 +120,9 @@ const DSATracker = () => {
                 />
             )}
             
-            {activeTab === 'stats' && <StatsTab />}
+            {activeTab === 'stats' && <StatsTab 
+                problem = {problem}
+            />}
             {activeTab === 'mindmap' && <MindMapTab/>}
         </div>
     );
