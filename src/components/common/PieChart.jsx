@@ -1,5 +1,4 @@
-    import React from "react";
-
+ import React from "react";
     const PieChart = ({ solvedCount, totalCount}) => {
     const percentage = totalCount > 0 ? (solvedCount / totalCount) * 100 : 0;
 
