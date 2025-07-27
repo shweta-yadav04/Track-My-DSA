@@ -51,5 +51,4 @@
         </div>
     );
     };
-
-    export default PieChart;
+export default PieChart;
