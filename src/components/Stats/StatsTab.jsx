@@ -1,10 +1,14 @@
 import PieChart from '../common/PieChart';
 import React from "react";
-
+import DifficultyChart from '../common/DifficultyChart';
 const StatsTab = ({ problem }) => {
   const topics = [...new Set(problem.map(p => p.topic))];
   const solvedCount = problem.filter(p => p.status?.toLowerCase() === 'solved').length;
+ // const solved = problem.status?.toLowerCase()==='solved';
   const totalCount = problem.length;
+  const easySolvedCount = problem.filter(p => p.difficulty === 'Easy' && p.status?.toLowerCase()==='solved').length;
+  const mediumSolvedCount = problem.filter(p => p.difficulty === 'Medium' && p.status?.toLowerCase()==='solved').length;
+  const hardSolvedCount = problem.filter(p => p.difficulty === 'Hard' && p.status?.toLowerCase()==='solved').length;
   return (
     <div className="flex gap-8 mt-4">
       <div className="flex-1">
@@ -45,6 +49,15 @@ const StatsTab = ({ problem }) => {
         solvedCount={solvedCount}
         totalCount={totalCount}
        />
+      
+       <div>
+        <DifficultyChart
+          easySolvedCount = {easySolvedCount}
+          mediumSolvedCount = {mediumSolvedCount}
+          hardSolvedCount = {hardSolvedCount}
+         
+        />
+      </div> 
       </div>
     </div>
   );
