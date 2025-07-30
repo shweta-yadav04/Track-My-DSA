@@ -4,17 +4,16 @@ import DifficultyChart from '../common/DifficultyChart';
 const StatsTab = ({ problem }) => {
   const topics = [...new Set(problem.map(p => p.topic))];
   const solvedCount = problem.filter(p => p.status?.toLowerCase() === 'solved').length;
- // const solved = problem.status?.toLowerCase()==='solved';
   const totalCount = problem.length;
   const easySolvedCount = problem.filter(p => p.difficulty === 'Easy' && p.status?.toLowerCase()==='solved').length;
   const mediumSolvedCount = problem.filter(p => p.difficulty === 'Medium' && p.status?.toLowerCase()==='solved').length;
   const hardSolvedCount = problem.filter(p => p.difficulty === 'Hard' && p.status?.toLowerCase()==='solved').length;
   return (
-    <div className="flex gap-8 mt-4">
+    <div className="flex gap-5 mt-4">
       <div className="flex-1">
         <div className="bg-[#ffffffcc] backdrop-blur-sm rounded-xl p-6 border border-[#d1d5db] ml-4">
           <h3 className="text-lg font-semibold text-[#212121] mb-2">Topic Distribution</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
             {topics.map(topic => {
               const topicProblems = problem.filter(p => p.topic === topic);
               const solvedCount = topicProblems.filter(p => p.status?.toLowerCase() === 'solved').length;
