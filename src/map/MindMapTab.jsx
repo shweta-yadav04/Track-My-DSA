@@ -91,11 +91,6 @@ const nodes = [
   { id: '24', position: { x: 520, y: 480 }, data: { label: 'BST' }, type: 'medium' },
   { id: '25', position: { x: 520, y: 540 }, data: { label: 'AVL Tree' }, type: 'hard' },
   { id: '26', position: { x: 520, y: 600 }, data: { label: 'Red-Black Tree' }, type: 'hard' },
-  { id: '27', position: { x: 520, y: 660 }, data: { label: 'B-Tree' }, type: 'hard' },
-  { id: '28', position: { x: 520, y: 720 }, data: { label: 'B+ Tree' }, type: 'hard' },
-  { id: '29', position: { x: 520, y: 780 }, data: { label: 'Segment Tree' }, type: 'hard' },
-  { id: '30', position: { x: 520, y: 840 }, data: { label: 'Fenwick Tree' }, type: 'hard' },
-  { id: '31', position: { x: 520, y: 900 }, data: { label: 'Trie' }, type: 'medium' },
   
   // Graph Types - Medium to Hard
   { id: '32', position: { x: 650, y: 420 }, data: { label: 'Directed Graph' }, type: 'medium' },
