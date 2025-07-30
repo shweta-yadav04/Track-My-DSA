@@ -123,13 +123,13 @@ const nodes = [
   { id: '47', position: { x: 1170, y: 540 }, data: { label: 'Binary Heap' }, type: 'medium' },
   
 ];
- // NOT YET
+ // NOT YEt
 const edges = [];
 
 const MindMapTab = () => {
   return (
     <div className="w-full h-screen bg-[#F3F4F6] relative">
-      {/* Legend */}
+      
       <div className="absolute top-4 left-4 bg-[#FFFF] p-4 rounded-lg shadow-lg z-10 border border-[#E5E7EB]">
         <h3 className="font-bold text-sm mb-2">Difficulty Level</h3>
         <div className="flex flex-col gap-2">
@@ -145,9 +145,9 @@ const MindMapTab = () => {
             <div className="w-4 h-4 bg-[#EF4444] rounded"></div>
             <span className="text-xs">Hard</span>
           </div>
-        </div>
-      </div>
-      <div className="absolute top-4 right-4 bg-[#FFFF] p-4 rounded-lg shadow-lg z-10 border border-[#E5E7EB] ">
+          </div>
+          </div>
+        <div className="absolute top-4 right-4 bg-[#FFFF] p-4 rounded-lg shadow-lg z-10 border border-[#E5E7EB] ">
         <h3 className="font-bold text-sm mb-2">Time Complexity Guide</h3>
        <div className="text-xs space-y-1">
          <div>O(1) - Constant</div>
@@ -157,6 +157,8 @@ const MindMapTab = () => {
         <div>O(m) - String length</div>
       </div>
       </div>
+      
+      
       <ReactFlow 
         nodes={nodes} 
         edges={edges} 
@@ -187,6 +189,8 @@ const MindMapTab = () => {
 
       </ReactFlow>
     </div>
+    
+  
   );
-};
+}
 export default MindMapTab;
