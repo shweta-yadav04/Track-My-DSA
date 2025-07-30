@@ -147,7 +147,16 @@ const MindMapTab = () => {
           </div>
         </div>
       </div>
-      
+      <div className="absolute top-4 right-4 bg-[#FFFF] p-4 rounded-lg shadow-lg z-10 border border-[#E5E7EB] ">
+        <h3 className="font-bold text-sm mb-2">Time Complexity Guide</h3>
+       <div className="text-xs space-y-1">
+         <div>O(1) - Constant</div>
+         <div>O(log n) - Logarithmic</div>
+         <div>O(n) - Linear</div>
+        <div>O(V+E) - Vertices + Edges</div>
+        <div>O(m) - String length</div>
+      </div>
+      </div>
       <ReactFlow 
         nodes={nodes} 
         edges={edges} 
